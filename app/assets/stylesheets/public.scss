@@ -1,3 +1,17 @@
 // Place all the styles related to the Public controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.main{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #dedede;
+}
+.main-left{
+    float: left;
+    width: 33.2%;
+}
+.main-right{
+    float: left;
+    width: 66.6%;
+}

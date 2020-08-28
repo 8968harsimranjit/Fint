@@ -10,6 +10,14 @@
   </head>
 
   <body>
+  <div class="main">
+  <div class="main-left">
+ <h1>Fint List</h1>
+ <%= link_to 'Create new post', new_post_url %>
+  </div>
+  <div class="main-right">
     <%= yield %>
+</div>
+</div>
   </body>
 </html>
