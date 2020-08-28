@@ -12,5 +12,32 @@
  *
  */
  // Custom bootstrap variables must be set or imported *before* bootstrap.
-@import "bootstrap";
+  @import "bootstrap";
 
+.category-box{
+    width: 33%;
+    float: left;
+}
+.main{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    background: #dedede;
+}
+.main-left{
+    float: left;
+    width: 33.2%;
+}
+.main-right{
+    float: left;
+    width: 66.6%;
+}
+.category-post{
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #e9d5d5;
+}
+.post-date{
+    color: #999;
+}

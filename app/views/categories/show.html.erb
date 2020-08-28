@@ -1,8 +1,11 @@
-<% @category.posts.each do |post|%>
+<% @category.subcategories.each do |post|%>
 <div class="category-post">
-<span class= "post-date"><%= time_ago_in_words post.created_at %></span>
-<span class= "post-title"><%= post.title %></span>
+<h4><span class= "post-title"><%= post.name%></span></h4>
+<i><span class= "post-date"><%= time_ago_in_words post.created_at %> ago</span></i>
 </div>
+<% end %>
+<% if @posts= nil then %>
+<p>No posts to display</p>
 <% end %>
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
