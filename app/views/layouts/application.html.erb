@@ -13,7 +13,10 @@
   <div class="main">
   <div class="main-left">
  <h1>Fint List</h1>
- <%= link_to 'Create new post', new_post_url %>
+
+<%= render "categories/category_sidebar" if controller.controller_name == "categories"%>
+
+ <%= link_to 'Create new post', new_post_path if controller.controller_name == "public" %>
   </div>
   <div class="main-right">
     <%= yield %>
